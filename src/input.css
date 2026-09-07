@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  body {
+    background-color: #07060A;
+    color: #E6E1D5;
+    font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, .font-heading {
+    font-family: "Cormorant Garamond", "Cinzel", Georgia, serif;
+  }
+  .font-display {
+    font-family: "Cinzel", "Playfair Display", Georgia, serif;
+  }
+}
+
+/* Efeito Foil Ouro Metálico */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFF0C2 0%, #D8B548 35%, #F7E49A 60%, #AA820A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-subtle-gold {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5E6BD 50%, #D4AF37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-gold {
+  background: linear-gradient(135deg, #D8B548 0%, #F5E6BD 45%, #C89F2A 100%);
+}
+
+.bg-gradient-gold-hover {
+  background: linear-gradient(135deg, #E6C865 0%, #FFF3D1 50%, #D8B548 100%);
+}
+
+/* Cards com estética de Carta de Tarot */
+.tarot-card-border {
+  border: 1px solid rgba(216, 181, 72, 0.28);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px -5px rgba(216, 181, 72, 0.12);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tarot-card-border:hover {
+  border-color: rgba(216, 181, 72, 0.55);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.9), 0 0 35px 2px rgba(216, 181, 72, 0.22);
+  transform: translateY(-4px);
+}
+
+/* Vidro Celestial com Reflexo Estelar */
+.celestial-glass {
+  background: rgba(19, 16, 26, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 181, 72, 0.18);
+}
+
+.celestial-glass-light {
+  background: rgba(26, 22, 36, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(216, 181, 72, 0.22);
+}
+
+/* Luzes e Brilhos de Fundo */
+.celestial-glow {
+  box-shadow: 0 0 50px rgba(200, 159, 42, 0.15);
+}
+
+.gold-glow-btn {
+  box-shadow: 0 4px 20px rgba(200, 159, 42, 0.35);
+  transition: all 0.25s ease-in-out;
+}
+
+.gold-glow-btn:hover {
+  box-shadow: 0 6px 30px rgba(216, 181, 72, 0.55);
+}
+
+/* Moldura Ornamentada de Tarot (inspirada no moodboard) */
+.tarot-frame {
+  position: relative;
+  padding: 8px;
+  border-radius: 1.75rem;
+  background: linear-gradient(135deg, rgba(216, 181, 72, 0.4) 0%, rgba(20, 17, 28, 0.8) 50%, rgba(216, 181, 72, 0.25) 100%);
+}
+
+.tarot-frame-inner {
+  border-radius: 1.5rem;
+  border: 1px solid rgba(216, 181, 72, 0.3);
+  overflow: hidden;
+}
+
+/* Estrelas Cintilantes Sutis */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 0.9; transform: scale(1.1); }
+}
+
+.animate-twinkle-1 {
+  animation: twinkle 4s ease-in-out infinite;
+}
+
+.animate-twinkle-2 {
+  animation: twinkle 5s ease-in-out 1.5s infinite;
+}
+
+.animate-twinkle-3 {
+  animation: twinkle 6s ease-in-out 3s infinite;
+}
+
+
