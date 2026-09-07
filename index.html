@@ -2,7 +2,7 @@
 <html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Ianan Tarot | Especialista em Relacionamentos e Diagnóstico</title>
   <meta name="description" content="Tarot terapêutico e diagnóstico amoroso com Amanda Beteli. Mais de 30 mil atendimentos no Brasil e Portugal. Agende seu direcionamento." />
   <link rel="canonical" href="https://ianantarot.vercel.app/" />
@@ -57,7 +57,7 @@
   <!-- CSS Compilado -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="bg-celestial-950 text-[#E6E1D5] font-sans antialiased selection:bg-gold-500 selection:text-celestial-950 overflow-x-hidden">
+<body class="bg-celestial-950 text-[#E6E1D5] font-sans antialiased selection:bg-gold-500 selection:text-celestial-950 overflow-x-hidden w-full max-w-full relative">
 
   <!-- Topbar Internacional de Atendimento -->
   <div class="bg-[#0A0810] border-b border-gold-500/20 text-xs py-2.5 px-4 text-center text-gold-200">
@@ -161,13 +161,15 @@
     </div>
   </aside>
 
-  <!-- SEÇÃO HERO (Sem overflow-hidden, tipografia respirando, visual dark luxury) -->
-  <section id="inicio" class="scroll-mt-28 relative pt-14 pb-20 sm:pt-20 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+  <!-- SEÇÃO HERO (Com compensação de padding-top, sem vazamento horizontal) -->
+  <section id="inicio" class="scroll-mt-32 relative pt-24 pb-20 sm:pt-28 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-x-clip max-w-full">
     
-    <!-- Efeitos Visuais de Fundo -->
-    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-gold-500/10 via-wine-900/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
-    <div class="absolute -top-10 -left-10 w-64 h-64 bg-gold-500/5 rounded-full blur-2xl pointer-events-none -z-10 animate-twinkle-1"></div>
-    <div class="absolute bottom-10 right-10 w-80 h-80 bg-gold-400/5 rounded-full blur-3xl pointer-events-none -z-10 animate-twinkle-2"></div>
+    <!-- Efeitos Visuais de Fundo Travados contra Overflow -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none -z-10">
+      <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-gold-500/10 via-wine-900/15 to-transparent rounded-full blur-3xl"></div>
+      <div class="absolute -top-10 -left-10 w-64 h-64 bg-gold-500/5 rounded-full blur-2xl animate-twinkle-1"></div>
+      <div class="absolute bottom-10 right-10 w-80 h-80 bg-gold-400/5 rounded-full blur-3xl animate-twinkle-2"></div>
+    </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
       
@@ -233,9 +235,9 @@
       <!-- Lado Direito: Foto Real Oficial de Amanda Beteli emoldurada como Carta de Tarot de Luxo -->
       <div class="lg:col-span-5 relative flex justify-center">
         
-        <!-- Cartas Decorativas no Fundo -->
-        <div class="absolute -top-4 -right-4 w-64 sm:w-80 h-[380px] sm:h-[460px] rounded-tarot bg-celestial-800/40 border border-gold-500/20 rotate-6 pointer-events-none -z-10 shadow-2xl"></div>
-        <div class="absolute top-2 -left-4 w-64 sm:w-80 h-[380px] sm:h-[460px] rounded-tarot bg-celestial-900/60 border border-gold-500/15 -rotate-3 pointer-events-none -z-10 shadow-xl"></div>
+        <!-- Cartas Decorativas no Fundo (Ocultas em telas <640px para evitar quebra de viewport no mobile) -->
+        <div class="hidden sm:block absolute -top-4 -right-4 w-64 sm:w-80 h-[380px] sm:h-[460px] rounded-tarot bg-celestial-800/40 border border-gold-500/20 rotate-6 pointer-events-none -z-10 shadow-2xl"></div>
+        <div class="hidden sm:block absolute top-2 -left-4 w-64 sm:w-80 h-[380px] sm:h-[460px] rounded-tarot bg-celestial-900/60 border border-gold-500/15 -rotate-3 pointer-events-none -z-10 shadow-xl"></div>
 
         <!-- Carta Principal com a Foto Autêntica de Amanda Beteli -->
         <div class="tarot-frame w-full max-w-sm sm:max-w-md shadow-2xl">
@@ -270,27 +272,27 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 1: O MÉTODO (Com Fotografias Reais de Tarot, Velas e Cristais + Ícones SVG de Alto Luxo) -->
-  <section id="metodo" class="scroll-mt-28 py-20 sm:py-28 bg-celestial-900/50 border-y border-gold-500/15 relative">
+  <!-- SEÇÃO 1: O MÉTODO (Com Fotografias Reais, Ícones SVG Dourados e Tipografia Fluida) -->
+  <section id="metodo" class="scroll-mt-32 py-20 sm:py-28 bg-celestial-900/50 border-y border-gold-500/15 relative overflow-x-clip max-w-full">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <!-- Cabeçalho da Seção com Espaçamento Perfeito e Sem Choque de Fontes -->
-      <div class="text-center max-w-3xl mx-auto mb-16">
+      <!-- Cabeçalho da Seção com Compensação de Header Fixo e Tipografia Fluida -->
+      <div class="text-center max-w-3xl mx-auto mb-14 sm:mb-16">
         
-        <!-- Frase Superior em Badge Dedicado com Margem Inferior Calibrada -->
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-celestial-800/90 border border-gold-500/30 text-xs font-display font-semibold tracking-widest text-gold-300 uppercase mb-5 shadow-sm">
+        <!-- Frase Superior em Badge Dedicado -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-celestial-800/90 border border-gold-500/30 text-xs font-display font-semibold tracking-widest text-gold-300 uppercase mb-4 sm:mb-5 shadow-sm">
           <svg class="w-3.5 h-3.5 text-gold-400 fill-current" viewBox="0 0 24 24">
             <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6.4-4.8-6.4 4.8 2.4-7.2-6-4.8h7.6z"/>
           </svg>
           <span>Tarot Terapêutico & Estratégico</span>
         </div>
         
-        <!-- Título Central com Margem Superior e Line-Height Espaçado (Sem Sobreposição) -->
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE] mt-2 pt-1 leading-snug sm:leading-tight tracking-normal">
+        <!-- Título Central Fluido no Mobile (text-2xl sm:text-4xl lg:text-5xl) sem choque de linha -->
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE] mt-3 pt-1 leading-snug sm:leading-tight tracking-normal break-words">
           Não é adivinhação vazia. É <span class="text-gradient-gold italic font-display inline-block px-1">diagnóstico</span> e direcionamento.
         </h2>
         
-        <p class="text-slate-300 text-base leading-relaxed mt-4 pt-1">
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mt-4 pt-1">
           Depois de mais de 30 mil atendimentos, uma lição é absoluta: <em>não é apenas sobre o que a pessoa sente, é sobre o que ela constrói com você</em>. O Tarot ilumina os fatos que suas emoções tentam esconder.
         </p>
       </div>
@@ -409,13 +411,13 @@
   </section>
 
   <!-- SEÇÃO 2: ESPECIALISTA EM RELACIONAMENTOS (Com Ícones SVG Dourados Ricos & Foto Cerimonial) -->
-  <section id="relacionamentos" class="scroll-mt-28 py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="relacionamentos" class="scroll-mt-32 overflow-x-clip max-w-full py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
       <!-- Lado Esquerdo: Cards Ricos de Dores e Perguntas com ÍCONES SVG METÁLICOS -->
       <div class="lg:col-span-7 space-y-6">
         <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Respostas para as suas dúvidas</span>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE] leading-tight">
+        <h2 class="text-2xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE] leading-snug sm:leading-tight">
           As perguntas que tiram o seu sono têm <span class="text-gradient-gold italic">resposta</span>.
         </h2>
         <p class="text-slate-300 text-base leading-relaxed">
@@ -544,7 +546,7 @@
   </section>
 
   <!-- SEÇÃO 3: SOBRE AMANDA BETELI -->
-  <section id="sobre" class="scroll-mt-28 py-20 sm:py-28 bg-celestial-900/40 border-t border-gold-500/15">
+  <section id="sobre" class="scroll-mt-32 overflow-x-clip max-w-full py-20 sm:py-28 bg-celestial-900/40 border-t border-gold-500/15">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -614,7 +616,7 @@
   </section>
 
   <!-- SEÇÃO 4: MODALIDADES DE CONSULTA & SERVIÇOS -->
-  <section id="consultas" class="scroll-mt-28 py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section id="consultas" class="scroll-mt-32 overflow-x-clip max-w-full py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     
     <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
       <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Formatos de Consulta</span>
@@ -765,7 +767,7 @@
   </section>
 
   <!-- SEÇÃO 5: DEPOIMENTOS & PROVA SOCIAL (+30K HISTÓRIAS) -->
-  <section id="depoimentos" class="scroll-mt-28 py-20 sm:py-28 bg-celestial-900/50 border-y border-gold-500/15">
+  <section id="depoimentos" class="scroll-mt-32 overflow-x-clip max-w-full py-20 sm:py-28 bg-celestial-900/50 border-y border-gold-500/15">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
@@ -892,7 +894,7 @@
   </section>
 
   <!-- SEÇÃO 7: PERGUNTAS FREQUENTES (FAQ com scroll-mt-28 e sem sobreposição de header) -->
-  <section id="faq" class="scroll-mt-28 py-20 sm:py-28 bg-celestial-900/40 border-t border-gold-500/15">
+  <section id="faq" class="scroll-mt-32 overflow-x-clip max-w-full py-20 sm:py-28 bg-celestial-900/40 border-t border-gold-500/15">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-16 space-y-3">
