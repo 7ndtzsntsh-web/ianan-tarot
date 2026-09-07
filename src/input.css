@@ -3,20 +3,41 @@
 @tailwind utilities;
 
 @layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
   html {
     scroll-behavior: smooth;
     color-scheme: dark;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
   }
   body {
     background-color: #07060A;
     color: #E6E1D5;
     font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  main, section, header, footer {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+  img, svg, video {
+    max-width: 100%;
+    height: auto;
   }
   h1, h2, h3, h4, .font-heading {
     font-family: "Cormorant Garamond", "Cinzel", Georgia, serif;
   }
   .font-display {
     font-family: "Cinzel", "Playfair Display", Georgia, serif;
+  }
+  section[id] {
+    scroll-margin-top: 130px;
   }
 }
 
@@ -89,6 +110,7 @@
   padding: 8px;
   border-radius: 1.75rem;
   background: linear-gradient(135deg, rgba(216, 181, 72, 0.4) 0%, rgba(20, 17, 28, 0.8) 50%, rgba(216, 181, 72, 0.25) 100%);
+  max-width: 100%;
 }
 
 .tarot-frame-inner {
@@ -114,5 +136,3 @@
 .animate-twinkle-3 {
   animation: twinkle 6s ease-in-out 3s infinite;
 }
-
-
