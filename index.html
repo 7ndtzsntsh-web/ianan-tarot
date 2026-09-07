@@ -54,10 +54,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
 
-  <!-- FontAwesome Offline -->
-  <link rel="stylesheet" href="css/all.min.css" />
-
-  <!-- Precompiled Tailwind CSS -->
+  <!-- CSS Compilado -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="bg-celestial-950 text-[#E6E1D5] font-sans antialiased selection:bg-gold-500 selection:text-celestial-950 overflow-x-hidden">
@@ -70,7 +67,12 @@
         <span class="tracking-wide">Atendimentos Online <strong>Brasil 🇧🇷 & Portugal 🇵🇹</strong> • Agenda Aberta</span>
       </div>
       <div class="hidden sm:flex items-center gap-5 text-xs">
-        <span class="text-gold-300/80"><i class="fa-solid fa-shield-halved text-gold-400 mr-1.5"></i> 100% Sigilo e Ética</span>
+        <span class="text-gold-300/80 inline-flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5 text-gold-400 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+          100% Sigilo e Ética
+        </span>
         <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20consultas%20de%20Tarot." target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 font-semibold underline decoration-gold-400/50 transition-colors">
           (48) 99611-5084
         </a>
@@ -106,14 +108,18 @@
       <!-- Botão CTA Header em Fluxo Normal (Sem posições absolutas) -->
       <div class="flex items-center gap-3 shrink-0">
         <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20minha%20consulta%20de%20Tarot." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 sm:px-6 py-2.5 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-xs tracking-wider uppercase gold-glow-btn transition-all duration-200 hover:scale-105 active:scale-100 shrink-0 shadow-md">
-          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
           <span class="hidden xs:inline sm:inline">Agendar Consulta</span>
           <span class="inline xs:hidden sm:hidden">Agendar</span>
         </a>
 
         <!-- Botão Hamburger Mobile -->
         <button type="button" id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-gold-300 hover:text-white hover:bg-celestial-800/60 transition-colors" aria-label="Abrir menu de navegação">
-          <i class="fa-solid fa-bars text-xl"></i>
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
         </button>
       </div>
 
@@ -130,7 +136,9 @@
           <span class="font-display font-bold text-base text-gradient-gold uppercase">Ianan Tarot</span>
         </div>
         <button type="button" id="mobile-menu-close-btn" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-celestial-800" aria-label="Fechar menu">
-          <i class="fa-solid fa-xmark text-xl"></i>
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
         </button>
       </div>
       <nav class="flex flex-col gap-4 font-sans font-medium text-base text-slate-300">
@@ -144,7 +152,10 @@
     </div>
     <div class="pt-6 border-t border-gold-500/15 space-y-3">
       <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20minha%20consulta%20de%20Tarot." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-gold text-celestial-950 font-display font-bold text-xs tracking-wider uppercase shadow-gold-glow">
-        <i class="fa-brands fa-whatsapp text-base"></i> Falar no WhatsApp
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        Falar no WhatsApp
       </a>
       <p class="text-center text-[11px] text-slate-400">Atendimento sigiloso no Brasil e Portugal</p>
     </div>
@@ -165,7 +176,9 @@
         
         <!-- Selo Superior de Reconhecimento -->
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-celestial-800/80 border border-gold-500/30 text-gold-300 text-xs sm:text-sm font-sans tracking-wider shadow-sm">
-          <i class="fa-solid fa-moon text-gold-400 animate-twinkle-1"></i>
+          <svg class="w-3.5 h-3.5 text-gold-400 animate-twinkle-1 fill-current" viewBox="0 0 24 24">
+            <path d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"/>
+          </svg>
           <span class="font-semibold text-gradient-gold uppercase">Especialista em Relacionamentos</span>
           <span class="text-white/30">•</span>
           <span class="text-slate-300">+30.000 Atendimentos</span>
@@ -184,12 +197,17 @@
         <!-- Botões de Ação do Hero -->
         <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
           <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20amoroso." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-sm tracking-wider uppercase gold-glow-btn transition-all duration-200 hover:-translate-y-0.5 shadow-lg">
-            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
             <span>Agendar Meu Diagnóstico</span>
           </a>
 
           <a href="#metodo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-celestial-900/80 hover:bg-celestial-800 text-slate-200 font-sans font-semibold text-sm border border-gold-500/30 hover:border-gold-400 transition-all duration-200">
-            <i class="fa-solid fa-compass text-gold-400"></i>
+            <svg class="w-4 h-4 text-gold-400 stroke-current" fill="none" viewBox="0 0 24 24" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" fill="currentColor"/>
+            </svg>
             <span>Entender o Método</span>
           </a>
         </div>
@@ -252,25 +270,36 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 1: O MÉTODO (Com Fotografias Reais de Tarot, Velas e Cristais) -->
+  <!-- SEÇÃO 1: O MÉTODO (Com Fotografias Reais de Tarot, Velas e Cristais + Ícones SVG de Alto Luxo) -->
   <section id="metodo" class="scroll-mt-28 py-20 sm:py-28 bg-celestial-900/50 border-y border-gold-500/15 relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
-      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Tarot Terapêutico & Estratégico</span>
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE]">
-          Não é adivinhação vazia. É <span class="text-gradient-gold italic">diagnóstico</span> e direcionamento.
+      <!-- Cabeçalho da Seção com Espaçamento Perfeito e Sem Choque de Fontes -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        
+        <!-- Frase Superior em Badge Dedicado com Margem Inferior Calibrada -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-celestial-800/90 border border-gold-500/30 text-xs font-display font-semibold tracking-widest text-gold-300 uppercase mb-5 shadow-sm">
+          <svg class="w-3.5 h-3.5 text-gold-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6.4-4.8-6.4 4.8 2.4-7.2-6-4.8h7.6z"/>
+          </svg>
+          <span>Tarot Terapêutico & Estratégico</span>
+        </div>
+        
+        <!-- Título Central com Margem Superior e Line-Height Espaçado (Sem Sobreposição) -->
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE] mt-2 pt-1 leading-snug sm:leading-tight tracking-normal">
+          Não é adivinhação vazia. É <span class="text-gradient-gold italic font-display inline-block px-1">diagnóstico</span> e direcionamento.
         </h2>
-        <p class="text-slate-300 text-base leading-relaxed">
+        
+        <p class="text-slate-300 text-base leading-relaxed mt-4 pt-1">
           Depois de mais de 30 mil atendimentos, uma lição é absoluta: <em>não é apenas sobre o que a pessoa sente, é sobre o que ela constrói com você</em>. O Tarot ilumina os fatos que suas emoções tentam esconder.
         </p>
       </div>
 
-      <!-- Trio de Pilares com Fotos Reais e Cards Enriquecidos -->
+      <!-- Trio de Pilares com Fotos Reais e Ícones SVG Dourados Metálicos -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        <!-- Card 1: Diagnóstico Emocional Real com Fotografia Autêntica -->
-        <div class="rounded-tarot bg-celestial-850/90 tarot-card-border overflow-hidden flex flex-col justify-between group">
+        <!-- Card 1: Diagnóstico Emocional Real com Fotografia Autêntica & Ícone Olho Místico -->
+        <div class="rounded-tarot bg-celestial-850/90 tarot-card-border overflow-hidden flex flex-col justify-between group shadow-xl">
           <div>
             <div class="relative h-48 w-full overflow-hidden">
               <img src="img/leitura-tarot.jpg" alt="Mesa de tiragem de tarot com cristais e cartas iluminadas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="200" />
@@ -279,9 +308,14 @@
                 Etapa 01
               </div>
             </div>
-            <div class="p-6 sm:p-8 pt-2">
-              <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-xl text-gold-400 mb-4 group-hover:scale-110 transition-transform">
-                <i class="fa-solid fa-eye"></i>
+            <div class="p-6 sm:p-8 pt-4">
+              <!-- ÍCONE SVG DOURADO METÁLICO: Olho Místico da Verdade -->
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 via-celestial-900 to-gold-500/5 border border-gold-400/40 flex items-center justify-center text-gold-400 mb-5 group-hover:scale-110 transition-transform shadow-gold-glow">
+                <svg class="w-7 h-7 text-gold-400 drop-shadow-[0_0_8px_rgba(216,181,72,0.6)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/>
+                  <circle cx="12" cy="12" r="3.5" fill="currentColor" fill-opacity="0.25"/>
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke-width="1.2" opacity="0.6"/>
+                </svg>
               </div>
               <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-3">1. Diagnóstico Emocional Real</h3>
               <p class="text-sm text-slate-300 leading-relaxed">
@@ -291,14 +325,16 @@
           </div>
           <div class="p-6 sm:p-8 pt-0">
             <div class="pt-4 border-t border-gold-500/15 text-xs text-gold-300 font-sans flex items-center gap-2">
-              <i class="fa-solid fa-check text-gold-400"></i>
+              <svg class="w-4 h-4 text-gold-400 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
               <span>Clareza sobre padrões e atitudes</span>
             </div>
           </div>
         </div>
 
-        <!-- Card 2: Direcionamento Prático com Fotografia de Pêndulo e Oráculo -->
-        <div class="rounded-tarot bg-celestial-850/90 tarot-card-border overflow-hidden flex flex-col justify-between group">
+        <!-- Card 2: Direcionamento Prático com Fotografia de Pêndulo & Ícone Bússola Sagrada -->
+        <div class="rounded-tarot bg-celestial-850/90 tarot-card-border overflow-hidden flex flex-col justify-between group shadow-xl">
           <div>
             <div class="relative h-48 w-full overflow-hidden">
               <img src="img/cristais-tarot.jpg" alt="Pêndulo de cristal e cartas de tarot para direcionamento" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="200" />
@@ -307,9 +343,14 @@
                 Etapa 02
               </div>
             </div>
-            <div class="p-6 sm:p-8 pt-2">
-              <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-xl text-gold-400 mb-4 group-hover:scale-110 transition-transform">
-                <i class="fa-solid fa-compass"></i>
+            <div class="p-6 sm:p-8 pt-4">
+              <!-- ÍCONE SVG DOURADO METÁLICO: Bússola Sagrada dos Destinos -->
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 via-celestial-900 to-gold-500/5 border border-gold-400/40 flex items-center justify-center text-gold-400 mb-5 group-hover:scale-110 transition-transform shadow-gold-glow">
+                <svg class="w-7 h-7 text-gold-400 drop-shadow-[0_0_8px_rgba(216,181,72,0.6)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <polygon points="12 3 14.5 9.5 21 12 14.5 14.5 12 21 9.5 14.5 3 12 9.5 9.5 12 3" fill="currentColor" fill-opacity="0.25"/>
+                  <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+                </svg>
               </div>
               <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-3">2. Direcionamento Prático</h3>
               <p class="text-sm text-slate-300 leading-relaxed">
@@ -319,25 +360,32 @@
           </div>
           <div class="p-6 sm:p-8 pt-0">
             <div class="pt-4 border-t border-gold-500/15 text-xs text-gold-300 font-sans flex items-center gap-2">
-              <i class="fa-solid fa-check text-gold-400"></i>
+              <svg class="w-4 h-4 text-gold-400 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
               <span>Decisões conscientes e paz interior</span>
             </div>
           </div>
         </div>
 
-        <!-- Card 3: Trabalhos Espirituais com Fotografia Autêntica de Altar e Velas -->
-        <div class="rounded-tarot bg-celestial-850/90 tarot-card-border overflow-hidden flex flex-col justify-between group">
+        <!-- Card 3: Trabalhos Espirituais com Fotografia Autêntica de Altar, Cristais e Fumaça de Incenso & Ícone Chama Sagrada -->
+        <div class="rounded-tarot bg-celestial-850/90 tarot-card-border overflow-hidden flex flex-col justify-between group shadow-xl">
           <div>
             <div class="relative h-48 w-full overflow-hidden">
-              <img src="img/velas.jpg" alt="Chama de velas místicas para rituais e harmonização espiritual" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="200" />
+              <img src="img/trabalhos-espirituais.jpg" alt="Altar sagrado com cristais, bandeja de lua crescente, vela acesa e fumaça suave de incenso" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" width="400" height="200" />
               <div class="absolute inset-0 bg-gradient-to-t from-celestial-850 via-celestial-850/40 to-transparent"></div>
               <div class="absolute top-3 left-3 px-3 py-1 rounded-full celestial-glass border border-gold-400/30 text-[11px] font-display font-bold text-gold-300 uppercase">
                 Etapa 03
               </div>
             </div>
-            <div class="p-6 sm:p-8 pt-2">
-              <div class="w-12 h-12 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-xl text-gold-400 mb-4 group-hover:scale-110 transition-transform">
-                <i class="fa-solid fa-fire-flame-curved"></i>
+            <div class="p-6 sm:p-8 pt-4">
+              <!-- ÍCONE SVG DOURADO METÁLICO: Chama Mística, Lua e Estrelas Espirituais -->
+              <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold-500/20 via-celestial-900 to-gold-500/5 border border-gold-400/40 flex items-center justify-center text-gold-400 mb-5 group-hover:scale-110 transition-transform shadow-gold-glow">
+                <svg class="w-7 h-7 text-gold-400 drop-shadow-[0_0_8px_rgba(216,181,72,0.6)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8.5 14.5A2.5 2.5 0 0 0 11 17c1.38 0 2.5-1.12 2.5-2.5 0-1.63-1.5-2.88-2.5-4.5-1 1.62-2.5 2.87-2.5 4.5Z" fill="currentColor" fill-opacity="0.3"/>
+                  <path d="M12 2c1.5 3 5 5.5 5 10.5a7 7 0 1 1-14 0c0-3.5 2-6.5 4-8.5 0 2.5 2 4 3 4s1-3 2-6Z"/>
+                  <path d="M19 4l.8 1.6 1.7.2-1.2 1.2.3 1.7-1.6-.8-1.6.8.3-1.7-1.2-1.2 1.7-.2z" fill="currentColor" stroke="none"/>
+                </svg>
               </div>
               <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-3">3. Trabalhos Espirituais</h3>
               <p class="text-sm text-slate-300 leading-relaxed">
@@ -347,7 +395,9 @@
           </div>
           <div class="p-6 sm:p-8 pt-0">
             <div class="pt-4 border-t border-gold-500/15 text-xs text-gold-300 font-sans flex items-center gap-2">
-              <i class="fa-solid fa-check text-gold-400"></i>
+              <svg class="w-4 h-4 text-gold-400 fill-none stroke-current" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
               <span>Limpeza profunda e harmonia</span>
             </div>
           </div>
@@ -358,11 +408,11 @@
     </div>
   </section>
 
-  <!-- SEÇÃO 2: ESPECIALISTA EM RELACIONAMENTOS (Sem elementos vazios, com foto e cards ricos) -->
+  <!-- SEÇÃO 2: ESPECIALISTA EM RELACIONAMENTOS (Com Ícones SVG Dourados Ricos & Foto Cerimonial) -->
   <section id="relacionamentos" class="scroll-mt-28 py-20 sm:py-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       
-      <!-- Lado Esquerdo: Cards Ricos de Dores e Perguntas -->
+      <!-- Lado Esquerdo: Cards Ricos de Dores e Perguntas com ÍCONES SVG METÁLICOS -->
       <div class="lg:col-span-7 space-y-6">
         <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Respostas para as suas dúvidas</span>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE] leading-tight">
@@ -374,10 +424,14 @@
 
         <div class="space-y-4 pt-2">
           
-          <!-- Card de Pergunta 1 -->
+          <!-- Card de Pergunta 1: Pensamentos & Intenções (Ícone SVG Cartas Cruzadas & Coração) -->
           <div class="p-5 rounded-2xl bg-celestial-900 border border-gold-500/20 flex items-start gap-4 hover:border-gold-400/50 transition-colors shadow-md">
-            <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-500/5 border border-gold-400/30 text-gold-400 flex items-center justify-center shrink-0 text-base shadow-sm">
-              <i class="fa-solid fa-heart-crack"></i>
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-gold-500/20 via-celestial-900 to-gold-500/5 border border-gold-400/40 text-gold-400 flex items-center justify-center shrink-0 shadow-gold-glow">
+              <svg class="w-6 h-6 text-gold-400 drop-shadow-[0_0_6px_rgba(216,181,72,0.5)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="11" height="16" rx="2" transform="rotate(-12 8.5 12)" fill="currentColor" fill-opacity="0.15"/>
+                <rect x="10" y="4" width="11" height="16" rx="2" transform="rotate(12 15.5 12)" fill="currentColor" fill-opacity="0.25"/>
+                <path d="M12 9.5c-.8-1-2-1-2.5-.2-.6 1 .4 2.2 2.5 3.7 2.1-1.5 3.1-2.7 2.5-3.7-.5-.8-1.7-.8-2.5.2Z" fill="currentColor"/>
+              </svg>
             </div>
             <div class="space-y-1">
               <div class="flex items-center gap-2">
@@ -388,10 +442,14 @@
             </div>
           </div>
 
-          <!-- Card de Pergunta 2 -->
+          <!-- Card de Pergunta 2: Interferências & Terceiros (Ícone SVG Escudo Protetor Místico) -->
           <div class="p-5 rounded-2xl bg-celestial-900 border border-gold-500/20 flex items-start gap-4 hover:border-gold-400/50 transition-colors shadow-md">
-            <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-wine-500/20 to-wine-900/30 border border-gold-400/30 text-gold-400 flex items-center justify-center shrink-0 text-base shadow-sm">
-              <i class="fa-solid fa-user-secret"></i>
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-wine-500/20 via-celestial-900 to-gold-500/5 border border-gold-400/40 text-gold-400 flex items-center justify-center shrink-0 shadow-gold-glow">
+              <svg class="w-6 h-6 text-gold-400 drop-shadow-[0_0_6px_rgba(216,181,72,0.5)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="currentColor" fill-opacity="0.2"/>
+                <path d="M12 7v10M7 12h10" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+              </svg>
             </div>
             <div class="space-y-1">
               <div class="flex items-center gap-2">
@@ -402,10 +460,16 @@
             </div>
           </div>
 
-          <!-- Card de Pergunta 3 -->
+          <!-- Card de Pergunta 3: Futuro & Escolhas (Ícone SVG Ampulheta Mística & Chave do Tempo) -->
           <div class="p-5 rounded-2xl bg-celestial-900 border border-gold-500/20 flex items-start gap-4 hover:border-gold-400/50 transition-colors shadow-md">
-            <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-gold-500/20 to-gold-500/5 border border-gold-400/30 text-gold-400 flex items-center justify-center shrink-0 text-base shadow-sm">
-              <i class="fa-solid fa-hourglass-half"></i>
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-gold-500/20 via-celestial-900 to-gold-500/5 border border-gold-400/40 text-gold-400 flex items-center justify-center shrink-0 shadow-gold-glow">
+              <svg class="w-6 h-6 text-gold-400 drop-shadow-[0_0_6px_rgba(216,181,72,0.5)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 22h14M5 2h14"/>
+                <path d="M17 2v4.5a5 5 0 0 1-2 4L12 12l-3-1.5a5 5 0 0 1-2-4V2"/>
+                <path d="M7 22v-4.5a5 5 0 0 1 2-4l3 1.5 3-1.5a5 5 0 0 1 2 4V22"/>
+                <circle cx="12" cy="18" r="1.5" fill="currentColor"/>
+                <path d="M12 13v2" stroke-width="2"/>
+              </svg>
             </div>
             <div class="space-y-1">
               <div class="flex items-center gap-2">
@@ -420,7 +484,9 @@
 
         <div class="pt-3">
           <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Quero%20fazer%20uma%20consulta%20para%20entender%20meu%20relacionamento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-xs tracking-wider uppercase gold-glow-btn transition-transform hover:scale-105 shadow-lg">
-            <i class="fa-brands fa-whatsapp text-base"></i>
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+              <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
             <span>Tirar Minhas Dúvidas no Tarot</span>
           </a>
         </div>
@@ -438,7 +504,9 @@
             
             <div class="absolute bottom-4 left-4 right-4 p-3.5 rounded-xl celestial-glass border border-gold-400/30 flex items-center justify-between">
               <div class="flex items-center gap-2.5">
-                <i class="fa-solid fa-sparkles text-gold-400 text-sm"></i>
+                <svg class="w-4 h-4 text-gold-400 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6.4-4.8-6.4 4.8 2.4-7.2-6-4.8h7.6z"/>
+                </svg>
                 <span class="text-xs font-display font-bold text-[#F8F5EE] uppercase tracking-wider">Tiragens Aprofundadas</span>
               </div>
               <span class="text-[11px] text-gold-300 font-sans">Sem ilusões</span>
@@ -450,7 +518,9 @@
         <div class="rounded-2xl bg-gradient-to-br from-celestial-850 via-celestial-900 to-wine-900/30 p-6 sm:p-8 border border-gold-500/25 shadow-xl">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-8 h-8 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center text-sm">
-              <i class="fa-solid fa-heart"></i>
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
             </div>
             <span class="text-[11px] font-display font-bold tracking-widest text-gold-400 uppercase">Compromisso com a Verdade</span>
           </div>
@@ -505,7 +575,11 @@
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
             <div class="p-4 rounded-2xl bg-celestial-850 border border-gold-500/15 flex items-center gap-3">
-              <i class="fa-solid fa-globe text-gold-400 text-xl"></i>
+              <svg class="w-6 h-6 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
               <div>
                 <p class="font-display font-bold text-xs text-[#F8F5EE] uppercase">Atendimento Global</p>
                 <p class="text-[11px] text-slate-400">Brasil 🇧🇷, Portugal 🇵🇹 e exterior</p>
@@ -513,7 +587,9 @@
             </div>
 
             <div class="p-4 rounded-2xl bg-celestial-850 border border-gold-500/15 flex items-center gap-3">
-              <i class="fa-solid fa-shield-halved text-gold-400 text-xl"></i>
+              <svg class="w-6 h-6 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
               <div>
                 <p class="font-display font-bold text-xs text-[#F8F5EE] uppercase">Sigilo Inegociável</p>
                 <p class="text-[11px] text-slate-400">Ambiente seguro e livre de julgamentos</p>
@@ -523,7 +599,10 @@
 
           <div class="pt-2">
             <a href="https://www.instagram.com/ianan.tarot/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 font-semibold underline decoration-gold-400/50 transition-colors">
-              <i class="fa-brands fa-instagram text-base text-gold-400"></i> Acompanhe no Instagram @ianan.tarot
+              <svg class="w-4 h-4 fill-current text-gold-400" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span>Acompanhe no Instagram @ianan.tarot</span>
             </a>
           </div>
 
@@ -561,10 +640,30 @@
           </p>
 
           <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Sentimentos reais & pensamentos</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Padrões inconscientes de bloqueio</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Futuro e movimentação da relação</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Perguntas livres e direcionamento</li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Sentimentos reais & pensamentos</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Padrões inconscientes de bloqueio</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Futuro e movimentação da relação</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Perguntas livres e direcionamento</span>
+            </li>
           </ul>
         </div>
 
@@ -585,10 +684,30 @@
           </p>
 
           <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Amor, carreira, finanças e espiritual</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Mês a mês com conselhos práticos</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Alertas de períodos desafiadores</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Oportunidades de crescimento</li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Amor, carreira, finanças e espiritual</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Mês a mês com conselhos práticos</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Alertas de períodos desafiadores</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Oportunidades de crescimento</span>
+            </li>
           </ul>
         </div>
 
@@ -609,10 +728,30 @@
           </p>
 
           <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Harmonização e quebra de conflitos</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Limpeza de peso e energias densas</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Abertura de caminhos afetivos</li>
-            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Rituais de alinhamento com ciclo mensal (30 dias)</li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Harmonização e quebra de conflitos</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Limpeza de peso e energias densas</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Abertura de caminhos afetivos</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <svg class="w-4 h-4 text-gold-400 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Rituais de alinhamento com ciclo mensal (30 dias)</span>
+            </li>
           </ul>
         </div>
 
@@ -645,7 +784,7 @@
         <div class="rounded-2xl bg-celestial-850 p-6 sm:p-7 border border-gold-500/15 relative flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex items-center text-gold-400 gap-1 mb-4 text-sm">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span>
             </div>
             <p class="text-sm text-slate-300 leading-relaxed italic mb-6">
               &ldquo;A Amanda falou coisas que ninguém sabia sobre o meu relacionamento. Ela não me iludiu, me mostrou o que ele realmente estava fazendo e me deu a força que eu precisava para me posicionar. Minha vida mudou.&rdquo;
@@ -661,7 +800,7 @@
         <div class="rounded-2xl bg-celestial-850 p-6 sm:p-7 border border-gold-500/15 relative flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex items-center text-gold-400 gap-1 mb-4 text-sm">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span>
             </div>
             <p class="text-sm text-slate-300 leading-relaxed italic mb-6">
               &ldquo;Fiz o ritual e o diagnóstico com ela de Portugal. Estávamos afastados há 4 meses e com muita mágoa. A orientação dela foi cirúrgica e o clima entre nós começou a clarear em duas semanas. Recomendo de olhos fechados!&rdquo;
@@ -677,7 +816,7 @@
         <div class="rounded-2xl bg-celestial-850 p-6 sm:p-7 border border-gold-500/15 relative flex flex-col justify-between shadow-lg">
           <div>
             <div class="flex items-center text-gold-400 gap-1 mb-4 text-sm">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span><span class="text-gold-400">★</span>
             </div>
             <p class="text-sm text-slate-300 leading-relaxed italic mb-6">
               &ldquo;Impressionante o acolhimento da Amanda. Você sente a energia e a seriedade logo nos primeiros minutos. O Tarot dela é terapêutico, traz paz e você sai da consulta sabendo exatamente o que fazer.&rdquo;
@@ -742,7 +881,9 @@
       </p>
       <div class="pt-2">
         <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20verificar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20consulta." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-xs tracking-wider uppercase gold-glow-btn transition-transform hover:scale-105 shadow-lg">
-          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+          </svg>
           <span>Consultar Horários Disponíveis</span>
         </a>
       </div>
@@ -770,7 +911,9 @@
         <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden shadow-md">
           <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
             <span class="font-heading font-bold text-base sm:text-lg text-[#F8F5EE]">Como funciona o atendimento online no Brasil e em Portugal?</span>
-            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300 shrink-0"></i>
+            <svg class="faq-chevron w-5 h-5 text-gold-400 transition-transform duration-300 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
           </button>
           <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
             O atendimento é realizado via WhatsApp de forma personalizada e direta com a Amanda Beteli. Você recebe fotos das tiragens das cartas, áudios explicativos detalhados sobre cada posicionamento e tem espaço para fazer perguntas livres. Consulentes de Portugal e de outros países são atendidos respeitando o fuso horário local.
@@ -781,7 +924,9 @@
         <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden shadow-md">
           <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
             <span class="font-heading font-bold text-base sm:text-lg text-[#F8F5EE]">Minhas informações e minha história são sigilosas?</span>
-            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300 shrink-0"></i>
+            <svg class="faq-chevron w-5 h-5 text-gold-400 transition-transform duration-300 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
           </button>
           <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
             Sim, 100% de sigilo e discrição. Nenhum dado, nome ou detalhe compartilhado durante a consulta é divulgado. Você estará em um espaço seguro, acolhedor e livre de qualquer tipo de julgamento moral.
@@ -792,7 +937,9 @@
         <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden shadow-md">
           <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
             <span class="font-heading font-bold text-base sm:text-lg text-[#F8F5EE]">Como posso realizar o pagamento morando fora do Brasil?</span>
-            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300 shrink-0"></i>
+            <svg class="faq-chevron w-5 h-5 text-gold-400 transition-transform duration-300 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
           </button>
           <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
             Aceitamos pagamento em Reais (Pix / Cartão) para consulentes no Brasil e em Euros (MB Way, Transferência Bancária Europeia / IBAN ou Cartão Internacional) para consulentes em Portugal e em toda a Europa.
@@ -803,7 +950,9 @@
         <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden shadow-md">
           <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
             <span class="font-heading font-bold text-base sm:text-lg text-[#F8F5EE]">O Tarot pode errar ou mudar com o tempo?</span>
-            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300 shrink-0"></i>
+            <svg class="faq-chevron w-5 h-5 text-gold-400 transition-transform duration-300 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
           </button>
           <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
             O Tarot mapeia as energias presentes e as tendências mais prováveis com base nas atitudes atuais de cada pessoa. O futuro não é uma prisão rígida: justamente por ter o diagnóstico em mãos, você ganha o poder de mudar suas atitudes para evitar caminhos ruins e potencializar caminhos favoráveis.
@@ -814,7 +963,9 @@
         <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden shadow-md">
           <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
             <span class="font-heading font-bold text-base sm:text-lg text-[#F8F5EE]">Como funcionam os Trabalhos e Rituais Espirituais?</span>
-            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300 shrink-0"></i>
+            <svg class="faq-chevron w-5 h-5 text-gold-400 transition-transform duration-300 shrink-0 stroke-current fill-none" viewBox="0 0 24 24" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
           </button>
           <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
             Antes de qualquer trabalho, é feita uma leitura prévia no Tarot para verificar a permissão espiritual e a real necessidade energética. Não fazemos promessas mágicas instantâneas: atuamos com firmeza e seriedade em rituais de alinhamento, harmonização e abertura de caminhos com acompanhamento de 30 em 30 dias.
@@ -863,11 +1014,15 @@
           <p class="font-display font-bold text-xs text-[#F8F5EE] uppercase tracking-wider">Canais Oficiais</p>
           <div class="space-y-2">
             <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-slate-300 hover:text-gold-400 transition-colors">
-              <i class="fa-brands fa-whatsapp text-gold-400 text-sm"></i>
+              <svg class="w-4 h-4 fill-current text-gold-400" viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
               <span>(48) 99611-5084</span>
             </a>
             <a href="https://www.instagram.com/ianan.tarot/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-slate-300 hover:text-gold-400 transition-colors">
-              <i class="fa-brands fa-instagram text-gold-400 text-sm"></i>
+              <svg class="w-4 h-4 fill-current text-gold-400" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
               <span>@ianan.tarot</span>
             </a>
             <p class="text-[11px] text-slate-500 pt-1">Atendimentos Online: Segunda a Sábado</p>
