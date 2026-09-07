@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ianantarot.vercel.app/sitemap.xml
