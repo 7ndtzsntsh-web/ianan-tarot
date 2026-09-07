@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ianan Tarot | Especialista em Relacionamentos e Diagnóstico</title>
+  <meta name="description" content="Tarot terapêutico e diagnóstico amoroso com Amanda Beteli. Mais de 30 mil atendimentos no Brasil e Portugal. Agende seu direcionamento." />
+  <link rel="canonical" href="https://ianantarot.vercel.app/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ianantarot.vercel.app/" />
+  <meta property="og:title" content="Ianan Tarot | Especialista em Relacionamentos e Diagnóstico" />
+  <meta property="og:description" content="Tarot terapêutico e diagnóstico amoroso com Amanda Beteli. Mais de 30 mil atendimentos no Brasil e Portugal. Agende seu direcionamento." />
+  <meta property="og:image" content="https://ianantarot.vercel.app/img/og-image.jpg" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ianan Tarot | Especialista em Relacionamentos e Diagnóstico" />
+  <meta name="twitter:description" content="Tarot terapêutico e diagnóstico amoroso com Amanda Beteli. Mais de 30 mil atendimentos no Brasil e Portugal. Agende seu direcionamento." />
+  <meta name="twitter:image" content="https://ianantarot.vercel.app/img/og-image.jpg" />
+
+  <!-- Favicon Oficial -->
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+
+  <!-- Schema.org (Dados Estruturados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Ianan Tarot - Amanda Beteli",
+    "image": "https://ianantarot.vercel.app/logo.png",
+    "url": "https://ianantarot.vercel.app/",
+    "telephone": "+5548996115084",
+    "priceRange": "$$",
+    "description": "Especialista em relacionamentos, tarot como diagnóstico profundo e direcionamento espiritual no Brasil e Portugal.",
+    "founder": {
+      "@type": "Person",
+      "name": "Amanda Beteli",
+      "jobTitle": "Taróloga e Especialista em Relacionamentos",
+      "image": "https://ianantarot.vercel.app/img/amanda.png"
+    },
+    "sameAs": [
+      "https://www.instagram.com/ianan.tarot/"
+    ]
+  }
+  </script>
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; object-src 'none'; base-uri 'self'; frame-src 'self' https://www.google.com https://maps.google.com; frame-ancestors 'none';" />
+
+  <!-- Google Fonts de Alto Luxo: Cinzel, Cormorant Garamond e Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- FontAwesome Offline -->
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <!-- Precompiled Tailwind CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-celestial-950 text-[#E6E1D5] font-sans antialiased selection:bg-gold-500 selection:text-celestial-950 overflow-x-hidden">
+
+  <!-- Topbar Internacional de Atendimento -->
+  <div class="bg-[#0A0810] border-b border-gold-500/20 text-xs py-2 px-4 text-center text-gold-200">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2 mx-auto sm:mx-0">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="tracking-wide">Atendimentos Online <strong>Brasil 🇧🇷 & Portugal 🇵🇹</strong> • Agenda de Consultas Aberta</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4 text-xs">
+        <span class="text-gold-300/80"><i class="fa-solid fa-lock text-gold-400 mr-1"></i> Sigilo e Ética Absoluta</span>
+        <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20as%20consultas%20de%20Tarot." target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 font-semibold underline decoration-gold-400/50 transition-colors">
+          (48) 99611-5084
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Barra de Navegação -->
+  <header id="main-header" class="sticky top-0 z-40 bg-celestial-950/90 backdrop-blur-md border-b border-gold-500/15 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logotipo Oficial Circular com Fases da Lua -->
+      <a href="#inicio" class="flex items-center gap-3 group focus:outline-none" aria-label="Ianan Tarot - Página Inicial">
+        <div class="relative w-12 h-12 rounded-full overflow-hidden border border-gold-400/40 shadow-gold-glow group-hover:border-gold-400 transition-colors">
+          <img src="logo.png" alt="Logotipo Oficial Ianan Tarot" class="w-full h-full object-cover" />
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-bold text-lg sm:text-xl tracking-wider text-gradient-gold uppercase leading-none">Ianan Tarot</span>
+          <span class="text-[10px] font-sans tracking-widest text-gold-300/70 uppercase mt-1">Amanda Beteli • +30k</span>
+        </div>
+      </a>
+
+      <!-- Menu Desktop -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-sans font-medium text-slate-300" aria-label="Navegação Principal">
+        <a href="#metodo" class="hover:text-gold-400 transition-colors py-1">O Método</a>
+        <a href="#relacionamentos" class="hover:text-gold-400 transition-colors py-1">Relacionamentos</a>
+        <a href="#sobre" class="hover:text-gold-400 transition-colors py-1">Sobre Amanda</a>
+        <a href="#consultas" class="hover:text-gold-400 transition-colors py-1">Consultas & Rituais</a>
+        <a href="#depoimentos" class="hover:text-gold-400 transition-colors py-1">Depoimentos</a>
+        <a href="#faq" class="hover:text-gold-400 transition-colors py-1">Dúvidas Frequentes</a>
+      </nav>
+
+      <!-- Botão CTA Principal Header -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20minha%20consulta%20de%20Tarot." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-xs tracking-wider uppercase gold-glow-btn transition-all duration-200 hover:scale-105 active:scale-100">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>Agendar Consulta</span>
+        </a>
+      </div>
+
+      <!-- Botão Hamburger Mobile -->
+      <button type="button" id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl text-gold-300 hover:text-white hover:bg-celestial-800/60 transition-colors" aria-label="Abrir menu de navegação">
+        <i class="fa-solid fa-bars text-xl"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Gaveta Mobile -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden transition-opacity"></div>
+  <aside id="mobile-drawer" class="fixed top-0 right-0 h-full w-4/5 max-w-xs bg-celestial-900 border-l border-gold-500/20 shadow-2xl z-50 p-6 flex flex-col justify-between translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gold-500/15 mb-6">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="Ianan Tarot" class="w-10 h-10 rounded-full border border-gold-400/40 object-cover" />
+          <span class="font-display font-bold text-base text-gradient-gold uppercase">Ianan Tarot</span>
+        </div>
+        <button type="button" id="mobile-menu-close-btn" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-celestial-800" aria-label="Fechar menu">
+          <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+      </div>
+      <nav class="flex flex-col gap-4 font-sans font-medium text-base text-slate-300">
+        <a href="#metodo" class="mobile-nav-link py-2 border-b border-white/5 hover:text-gold-400">O Método</a>
+        <a href="#relacionamentos" class="mobile-nav-link py-2 border-b border-white/5 hover:text-gold-400">Relacionamentos</a>
+        <a href="#sobre" class="mobile-nav-link py-2 border-b border-white/5 hover:text-gold-400">Sobre Amanda</a>
+        <a href="#consultas" class="mobile-nav-link py-2 border-b border-white/5 hover:text-gold-400">Consultas & Rituais</a>
+        <a href="#depoimentos" class="mobile-nav-link py-2 border-b border-white/5 hover:text-gold-400">Depoimentos</a>
+        <a href="#faq" class="mobile-nav-link py-2 hover:text-gold-400">Dúvidas Frequentes</a>
+      </nav>
+    </div>
+    <div class="pt-6 border-t border-gold-500/15 space-y-3">
+      <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20minha%20consulta%20de%20Tarot." target="_blank" rel="noopener noreferrer" class="w-full flex items-center justify-center gap-2 py-3 rounded-xl bg-gradient-gold text-celestial-950 font-display font-bold text-xs tracking-wider uppercase shadow-gold-glow">
+        <i class="fa-brands fa-whatsapp text-base"></i> Falar no WhatsApp
+      </a>
+      <p class="text-center text-[11px] text-slate-400">Atendimento sigiloso no Brasil e Portugal</p>
+    </div>
+  </aside>
+
+  <!-- SEÇÃO HERO (Inspirada no Moodboard Dark Luxury Celestial) -->
+  <section id="inicio" class="relative pt-12 pb-20 sm:pt-16 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+    
+    <!-- Efeitos Visuais de Luz Celestial no Fundo -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-gold-500/10 via-wine-900/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute -top-12 -left-12 w-64 h-64 bg-gold-500/5 rounded-full blur-2xl pointer-events-none -z-10 animate-twinkle-1"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-gold-400/5 rounded-full blur-3xl pointer-events-none -z-10 animate-twinkle-2"></div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      
+      <!-- Lado Esquerdo: Conteúdo Textual & Autoridade -->
+      <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+        
+        <!-- Selo Superior de Reconhecimento -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-celestial-800/80 border border-gold-500/30 text-gold-300 text-xs sm:text-sm font-sans tracking-wider shadow-sm">
+          <i class="fa-solid fa-moon text-gold-400 animate-twinkle-1"></i>
+          <span class="font-semibold text-gradient-gold uppercase">Especialista em Relacionamentos</span>
+          <span class="text-white/30">•</span>
+          <span class="text-slate-300">+30.000 Atendimentos</span>
+        </div>
+
+        <!-- H1 Único da Página: Forte, Emocionante e Posicionador -->
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-bold text-[#F8F5EE] leading-[1.12] tracking-tight">
+          Clareza e direcionamento para as decisões do seu <span class="text-gradient-gold italic font-display">coração</span>.
+        </h1>
+
+        <!-- Subtítulo Estratégico -->
+        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+          Descubra a verdade sobre os sentimentos, as intenções reais e o que a outra pessoa realmente constrói com você. Um diagnóstico profundo através do Tarot para você retomar o controle da sua vida afetiva.
+        </p>
+
+        <!-- Botões de Ação do Hero -->
+        <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+          <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20um%20diagn%C3%B3stico%20amoroso." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-sm tracking-wider uppercase gold-glow-btn transition-all duration-200 hover:-translate-y-0.5">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Agendar Meu Diagnóstico</span>
+          </a>
+
+          <a href="#metodo" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-celestial-900/80 hover:bg-celestial-800 text-slate-200 font-sans font-semibold text-sm border border-gold-500/30 hover:border-gold-400 transition-all duration-200">
+            <i class="fa-solid fa-compass text-gold-400"></i>
+            <span>Entender o Método</span>
+          </a>
+        </div>
+
+        <!-- Indicadores Rápidos de Confiança -->
+        <div class="pt-4 grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0 text-center">
+          <div class="p-3 rounded-2xl bg-celestial-900/60 border border-gold-500/15">
+            <p class="font-display font-bold text-xl text-gradient-gold">+30.000</p>
+            <p class="text-[11px] text-slate-400 mt-0.5">Atendimentos</p>
+          </div>
+          <div class="p-3 rounded-2xl bg-celestial-900/60 border border-gold-500/15">
+            <p class="font-display font-bold text-xl text-gradient-gold">100%</p>
+            <p class="text-[11px] text-slate-400 mt-0.5">Sigiloso e Ético</p>
+          </div>
+          <div class="p-3 rounded-2xl bg-celestial-900/60 border border-gold-500/15">
+            <p class="font-display font-bold text-xl text-gradient-gold">🇧🇷 | 🇵🇹</p>
+            <p class="text-[11px] text-slate-400 mt-0.5">Brasil & Portugal</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Lado Direito: Foto Real Oficial emoldurada como Carta de Tarot de Luxo -->
+      <div class="lg:col-span-5 relative flex justify-center">
+        
+        <!-- Cartas Decorativas em Cascata no Fundo (Inspiradas no Mockup) -->
+        <div class="absolute -top-4 -right-4 w-64 sm:w-80 h-[380px] sm:h-[460px] rounded-tarot bg-celestial-800/40 border border-gold-500/20 rotate-6 pointer-events-none -z-10 shadow-2xl"></div>
+        <div class="absolute top-2 -left-4 w-64 sm:w-80 h-[380px] sm:h-[460px] rounded-tarot bg-celestial-900/60 border border-gold-500/15 -rotate-3 pointer-events-none -z-10 shadow-xl"></div>
+
+        <!-- Carta Principal com a Foto Autêntica de Amanda Beteli -->
+        <div class="tarot-frame w-full max-w-sm sm:max-w-md shadow-2xl">
+          <div class="tarot-frame-inner bg-celestial-900 relative">
+            
+            <!-- Imagem Autêntica de Estúdio -->
+            <img src="img/amanda.png" alt="Amanda Beteli, fundadora do Ianan Tarot e especialista em relacionamentos" class="w-full h-auto object-cover aspect-[4/5] filter contrast-105" />
+
+            <!-- Sobreposição Gradiente na Base da Foto -->
+            <div class="absolute inset-0 bg-gradient-to-t from-celestial-950 via-celestial-950/30 to-transparent"></div>
+
+            <!-- Crachá / Selo Oficial Flutuante na Carta -->
+            <div class="absolute bottom-5 left-5 right-5 p-4 rounded-2xl celestial-glass border border-gold-400/30 text-center">
+              <div class="flex items-center justify-center gap-2 mb-1">
+                <span class="text-gold-400 text-xs">✦</span>
+                <p class="font-display font-bold text-sm tracking-wider uppercase text-gradient-gold">Amanda Beteli</p>
+                <span class="text-gold-400 text-xs">✦</span>
+              </div>
+              <p class="text-xs text-slate-300 font-sans">Fundadora Ianan Tarot • Diagnóstico & Rituais</p>
+            </div>
+
+            <!-- Logo Oficial Injetada no Topo da Imagem -->
+            <div class="absolute top-4 right-4 p-2 rounded-full celestial-glass border border-gold-400/30 shadow-md">
+              <img src="logo.png" alt="Selo Oficial Ianan Tarot" class="w-9 h-9 rounded-full object-cover" />
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 1: O MÉTODO (TAROT COMO DIAGNÓSTICO E DIRECIONAMENTO) -->
+  <section id="metodo" class="py-16 sm:py-24 bg-celestial-900/50 border-y border-gold-500/15 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Tarot Terapêutico & Estratégico</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE]">
+          Não é adivinhação vazia. É <span class="text-gradient-gold italic">diagnóstico</span> e direcionamento.
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Depois de mais de 30 mil atendimentos, uma lição é absoluta: <em>não é apenas sobre o que a pessoa sente, é sobre o que ela constrói com você</em>. O Tarot ilumina os fatos que suas emoções tentam esconder.
+        </p>
+      </div>
+
+      <!-- Trio de Pilares do Atendimento -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Diagnóstico -->
+        <div class="rounded-tarot bg-celestial-850/80 p-8 tarot-card-border relative group flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-2xl text-gold-400 mb-6 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-3">1. Diagnóstico Emocional Real</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Mergulho nas verdadeiras intenções, pensamentos ocultos e sentimentos da outra pessoa. Desmascaramos ilusões para você enxergar a realidade nua e crua.
+            </p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-gold-500/15 text-xs text-gold-300 font-sans flex items-center gap-2">
+            <i class="fa-solid fa-check text-gold-400"></i>
+            <span>Clareza sobre padrões e atitudes</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Direcionamento -->
+        <div class="rounded-tarot bg-celestial-850/80 p-8 tarot-card-border relative group flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-2xl text-gold-400 mb-6 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-3">2. Direcionamento Prático</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Você não sai da consulta com dúvidas. Recebe conselhos estratégicos sobre o que fazer, como conversar, quando insistir ou o momento exato de seguir em frente.
+            </p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-gold-500/15 text-xs text-gold-300 font-sans flex items-center gap-2">
+            <i class="fa-solid fa-check text-gold-400"></i>
+            <span>Decisões conscientes e paz interior</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Trabalhos Espirituais -->
+        <div class="rounded-tarot bg-celestial-850/80 p-8 tarot-card-border relative group flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-2xl text-gold-400 mb-6 group-hover:scale-110 transition-transform">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+            </div>
+            <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-3">3. Trabalhos Espirituais</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Quando há bloqueios espirituais, peso ou amarras interferindo no casal, realizamos rituais sérios de alinhamento, corte de negatividade e abertura de caminhos.
+            </p>
+          </div>
+          <div class="mt-6 pt-6 border-t border-gold-500/15 text-xs text-gold-300 font-sans flex items-center gap-2">
+            <i class="fa-solid fa-check text-gold-400"></i>
+            <span>Limpeza profunda e harmonia</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 2: ESPECIALISTA EM RELACIONAMENTOS (DORES E RESPOSTAS) -->
+  <section id="relacionamentos" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Lado Esquerdo: Dores Comuns -->
+      <div class="lg:col-span-6 space-y-6">
+        <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Respostas para as suas dúvidas</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE] leading-tight">
+          As perguntas que tiram o seu sono têm <span class="text-gradient-gold italic">resposta</span>.
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          A dor da dúvida corrói. Muitas vezes você se pega justificando atitudes frias, aceitando migalhas ou sem saber se aquela pessoa realmente voltará. O Tarot é a luz que encerra esse ciclo de ansiedade.
+        </p>
+
+        <div class="space-y-4 pt-2">
+          
+          <div class="p-4 rounded-2xl bg-celestial-900 border border-gold-500/15 flex items-start gap-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0 mt-0.5 text-sm">
+              <i class="fa-solid fa-question"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-heading font-bold text-[#F8F5EE]">Ele(a) ainda pensa em mim e quer voltar?</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">Analisamos a mente, o coração e a movimentação energética da pessoa em relação a você nos próximos meses.</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-celestial-900 border border-gold-500/15 flex items-start gap-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0 mt-0.5 text-sm">
+              <i class="fa-solid fa-question"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-heading font-bold text-[#F8F5EE]">Existe alguém interferindo na nossa relação?</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">Identificamos rivalidades, intromissões familiares ou bloqueios espirituais que possam estar esfriando o casal.</p>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-celestial-900 border border-gold-500/15 flex items-start gap-4">
+            <div class="w-8 h-8 rounded-full bg-gold-500/10 text-gold-400 flex items-center justify-center shrink-0 mt-0.5 text-sm">
+              <i class="fa-solid fa-question"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-heading font-bold text-[#F8F5EE]">Vale a pena esperar ou devo virar a página?</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-1">O Tarot revela o potencial real dessa história para você não perder anos esperando por promessas vazias.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-2">
+          <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Quero%20fazer%20uma%20consulta%20para%20entender%20meu%20relacionamento." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-xs tracking-wider uppercase gold-glow-btn transition-transform hover:scale-105">
+            <i class="fa-brands fa-whatsapp text-base"></i>
+            <span>Tirar Minhas Dúvidas no Tarot</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Lado Direito: Card de Acolhimento e Filosofia -->
+      <div class="lg:col-span-6">
+        <div class="rounded-tarot bg-gradient-to-br from-celestial-850 via-celestial-900 to-wine-900/30 p-8 sm:p-10 border border-gold-500/25 shadow-2xl relative overflow-hidden">
+          
+          <div class="absolute -top-10 -right-10 w-40 h-40 bg-gold-500/10 rounded-full blur-2xl pointer-events-none"></div>
+
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <span class="text-xs font-display font-bold tracking-widest text-gold-400 uppercase">Compromisso com Você</span>
+          </div>
+
+          <blockquote class="text-xl sm:text-2xl font-heading italic text-[#F8F5EE] leading-snug mb-6">
+            &ldquo;Eu não estou aqui para passar a mão na sua cabeça nem para vender falsas esperanças. Meu trabalho é te entregar a verdade com amor e acolhimento, para que você pare de sofrer e saiba exatamente onde está pisando.&rdquo;
+          </blockquote>
+
+          <div class="flex items-center gap-4 pt-4 border-t border-gold-500/20">
+            <img src="img/amanda.png" alt="Amanda Beteli" class="w-12 h-12 rounded-full object-cover border border-gold-400/40" />
+            <div>
+              <p class="font-display font-bold text-sm text-gradient-gold uppercase">Amanda Beteli</p>
+              <p class="text-xs text-slate-400">Taróloga & Ritualista • @ianan.tarot</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: SOBRE AMANDA BETELI -->
+  <section id="sobre" class="py-16 sm:py-24 bg-celestial-900/40 border-t border-gold-500/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Foto de Perfil & Moldura -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="tarot-frame w-full max-w-sm shadow-2xl">
+            <div class="tarot-frame-inner bg-celestial-950">
+              <img src="img/amanda.png" alt="Amanda Beteli, especialista em relacionamentos e tarot terapêutico" class="w-full h-auto object-cover aspect-[4/5]" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Biografia & Credibilidade -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Trajetória e Propósito</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE]">
+            Uma voz de acolhimento e verdade para transformar a sua história.
+          </h2>
+          
+          <p class="text-slate-300 text-base leading-relaxed font-normal">
+            Sou <strong>Amanda Beteli</strong>, fundadora do <strong>Ianan Tarot</strong>. Ao longo de anos de dedicação profunda aos oráculos e às ciências espirituais, conduzi mais de <strong>30.000 atendimentos</strong> para pessoas em todo o Brasil, Portugal e Europa.
+          </p>
+
+          <p class="text-slate-300 text-base leading-relaxed font-normal">
+            Minha missão não é o misticismo superficial ou o medo. Meu foco é o <strong>Tarot como ferramenta de diagnóstico consciente</strong>: identificar o que está oculto nas entrelinhas de uma relação, diagnosticar as feridas emocionais e traçar o melhor plano de ação para a sua paz.
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <div class="p-4 rounded-2xl bg-celestial-850 border border-gold-500/15 flex items-center gap-3">
+              <i class="fa-solid fa-globe text-gold-400 text-xl"></i>
+              <div>
+                <p class="font-display font-bold text-xs text-[#F8F5EE] uppercase">Atendimento Global</p>
+                <p class="text-[11px] text-slate-400">Brasil 🇧🇷, Portugal 🇵🇹 e exterior</p>
+              </div>
+            </div>
+
+            <div class="p-4 rounded-2xl bg-celestial-850 border border-gold-500/15 flex items-center gap-3">
+              <i class="fa-solid fa-shield-halved text-gold-400 text-xl"></i>
+              <div>
+                <p class="font-display font-bold text-xs text-[#F8F5EE] uppercase">Sigilo Inegociável</p>
+                <p class="text-[11px] text-slate-400">Ambiente seguro e livre de julgamentos</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="https://www.instagram.com/ianan.tarot/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm text-gold-300 hover:text-gold-200 font-semibold underline decoration-gold-400/50 transition-colors">
+              <i class="fa-brands fa-instagram text-base text-gold-400"></i> Acompanhe no Instagram @ianan.tarot
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: MODALIDADES DE CONSULTA & SERVIÇOS -->
+  <section id="consultas" class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+      <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Formatos de Consulta</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE]">
+        Escolha o atendimento ideal para o seu momento.
+      </h2>
+      <p class="text-slate-300 text-base">
+        Cada consulta é realizada de forma individual, personalizada e com acompanhamento via WhatsApp.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Modalidade 1: Diagnóstico Amoroso -->
+      <div class="rounded-tarot bg-celestial-900 p-8 tarot-card-border relative flex flex-col justify-between">
+        <div>
+          <div class="inline-block px-3 py-1 rounded-full bg-gold-500/15 border border-gold-500/30 text-gold-300 text-[11px] font-display font-bold uppercase mb-4">
+            Mais Procurada
+          </div>
+          <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-2">Diagnóstico Amoroso Completo</h3>
+          <p class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+            Análise detalhada de sentimentos, intenções reais do parceiro(a), interferências e tendências para o casal.
+          </p>
+
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Sentimentos reais & pensamentos</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Padrões inconscientes de bloqueio</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Futuro e movimentação da relação</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Perguntas livres e direcionamento</li>
+          </ul>
+        </div>
+
+        <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20o%20Diagn%C3%B3stico%20Amoroso%20Completo." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-xs tracking-wider uppercase text-center gold-glow-btn transition-transform hover:scale-105">
+          Agendar Diagnóstico Amoroso
+        </a>
+      </div>
+
+      <!-- Modalidade 2: Mapa da Vida 12 Meses -->
+      <div class="rounded-tarot bg-celestial-900 p-8 tarot-card-border relative flex flex-col justify-between">
+        <div>
+          <div class="inline-block px-3 py-1 rounded-full bg-celestial-800 border border-gold-500/20 text-slate-300 text-[11px] font-display font-bold uppercase mb-4">
+            Previsão Anual
+          </div>
+          <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-2">Mapa da Vida (12 Meses)</h3>
+          <p class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+            Panorama estratégico e profundo de todas as áreas para você vivenciar seu ano com propósito e controle.
+          </p>
+
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Amor, carreira, finanças e espiritual</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Mês a mês com conselhos práticos</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Alertas de períodos desafiadores</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Oportunidades de crescimento</li>
+          </ul>
+        </div>
+
+        <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20o%20Mapa%20da%20Vida%20de%2012%20Meses." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-celestial-850 hover:bg-celestial-800 text-gold-300 border border-gold-500/40 hover:border-gold-400 font-display font-bold text-xs tracking-wider uppercase text-center transition-all duration-200">
+          Agendar Mapa da Vida
+        </a>
+      </div>
+
+      <!-- Modalidade 3: Trabalhos e Rituais Espirituais -->
+      <div class="rounded-tarot bg-celestial-900 p-8 tarot-card-border relative flex flex-col justify-between">
+        <div>
+          <div class="inline-block px-3 py-1 rounded-full bg-wine-900/60 border border-wine-700/60 text-gold-300 text-[11px] font-display font-bold uppercase mb-4">
+            Alinhamento & Limpeza
+          </div>
+          <h3 class="text-2xl font-heading font-bold text-[#F8F5EE] mb-2">Trabalhos & Rituais Espirituais</h3>
+          <p class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+            Atuação energética personalizada para destravar caminhos, harmonizar laços e remover demandas espirituais.
+          </p>
+
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Harmonização e quebra de conflitos</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Limpeza de peso e energias densas</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Abertura de caminhos afetivos</li>
+            <li class="flex items-center gap-2.5"><i class="fa-solid fa-check text-gold-400"></i> Ritual das 7 Chamas e proteção</li>
+          </ul>
+        </div>
+
+        <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Trabalhos%20Espirituais%20e%20Rituais." target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-full bg-celestial-850 hover:bg-celestial-800 text-gold-300 border border-gold-500/40 hover:border-gold-400 font-display font-bold text-xs tracking-wider uppercase text-center transition-all duration-200">
+          Consultar Rituais
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SEÇÃO 5: DEPOIMENTOS & PROVA SOCIAL (+30K HISTÓRIAS) -->
+  <section id="depoimentos" class="py-16 sm:py-24 bg-celestial-900/50 border-y border-gold-500/15">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Histórias Reais</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE]">
+          O que dizem quem já passou pela consulta.
+        </h2>
+        <p class="text-slate-300 text-base">
+          Consulentes do Brasil, Portugal e outros países que encontraram alívio, clareza e rumo em suas vidas.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Depoimento 1 -->
+        <div class="rounded-2xl bg-celestial-850 p-6 border border-gold-500/15 relative">
+          <div class="flex items-center text-gold-400 gap-1 mb-4 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed italic mb-6">
+            &ldquo;A Amanda falou coisas que ninguém sabia sobre o meu relacionamento. Ela não me iludiu, me mostrou o que ele realmente estava fazendo e me deu a força que eu precisava para me posicionar. Minha vida mudou.&rdquo;
+          </p>
+          <div class="flex items-center justify-between text-xs border-t border-gold-500/10 pt-4 text-slate-400">
+            <span class="font-semibold text-slate-200">Juliana M.</span>
+            <span>São Paulo, SP 🇧🇷</span>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="rounded-2xl bg-celestial-850 p-6 border border-gold-500/15 relative">
+          <div class="flex items-center text-gold-400 gap-1 mb-4 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed italic mb-6">
+            &ldquo;Fiz o ritual e o diagnóstico com ela de Portugal. Estávamos afastados há 4 meses e com muita mágoa. A orientação dela foi cirúrgica e o clima entre nós começou a clarear em duas semanas. Recomendo de olhos fechados!&rdquo;
+          </p>
+          <div class="flex items-center justify-between text-xs border-t border-gold-500/10 pt-4 text-slate-400">
+            <span class="font-semibold text-slate-200">Beatriz F.</span>
+            <span>Lisboa, Portugal 🇵🇹</span>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="rounded-2xl bg-celestial-850 p-6 border border-gold-500/15 relative">
+          <div class="flex items-center text-gold-400 gap-1 mb-4 text-sm">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-sm text-slate-300 leading-relaxed italic mb-6">
+            &ldquo;Impressionante o acolhimento da Amanda. Você sente a energia e a seriedade logo nos primeiros minutos. O Tarot dela é terapêutico, traz paz e você sai da consulta sabendo exatamente o que fazer.&rdquo;
+          </p>
+          <div class="flex items-center justify-between text-xs border-t border-gold-500/10 pt-4 text-slate-400">
+            <span class="font-semibold text-slate-200">Camila R.</span>
+            <span>Porto Alegre, RS 🇧🇷</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: COMO FUNCIONA O ATENDIMENTO ONLINE -->
+  <section class="py-16 sm:py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+      <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Passo a Passo Simples</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE]">
+        Como funciona a sua consulta.
+      </h2>
+      <p class="text-slate-300 text-base">
+        Atendimento 100% online no conforto e na privacidade da sua casa.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <div class="p-6 rounded-2xl bg-celestial-900 border border-gold-500/15 text-center space-y-3">
+        <div class="w-12 h-12 mx-auto rounded-full bg-gradient-gold text-celestial-950 font-display font-bold text-lg flex items-center justify-center">1</div>
+        <h3 class="text-lg font-heading font-bold text-[#F8F5EE]">Contato Inicial</h3>
+        <p class="text-xs text-slate-300">Você envia uma mensagem no WhatsApp oficial informando a modalidade desejada.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-celestial-900 border border-gold-500/15 text-center space-y-3">
+        <div class="w-12 h-12 mx-auto rounded-full bg-gradient-gold text-celestial-950 font-display font-bold text-lg flex items-center justify-center">2</div>
+        <h3 class="text-lg font-heading font-bold text-[#F8F5EE]">Agendamento Rápido</h3>
+        <p class="text-xs text-slate-300">Definimos o melhor dia/horário. Pagamento facilitado via Pix no Brasil ou MB Way / Cartão em Portugal.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-celestial-900 border border-gold-500/15 text-center space-y-3">
+        <div class="w-12 h-12 mx-auto rounded-full bg-gradient-gold text-celestial-950 font-display font-bold text-lg flex items-center justify-center">3</div>
+        <h3 class="text-lg font-heading font-bold text-[#F8F5EE]">Abertura do Tarot</h3>
+        <p class="text-xs text-slate-300">Amanda abre o jogo individualmente com foto das cartas, áudios detalhados e explicações aprofundadas.</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-celestial-900 border border-gold-500/15 text-center space-y-3">
+        <div class="w-12 h-12 mx-auto rounded-full bg-gradient-gold text-celestial-950 font-display font-bold text-lg flex items-center justify-center">4</div>
+        <h3 class="text-lg font-heading font-bold text-[#F8F5EE]">Direcionamento & Paz</h3>
+        <p class="text-xs text-slate-300">Você tira suas dúvidas finais e recebe conselhos práticos para transformar o seu momento.</p>
+      </div>
+
+    </div>
+
+    <!-- Banner de Ação Rápida -->
+    <div class="mt-12 p-8 rounded-tarot celestial-glass border border-gold-400/30 text-center space-y-4 max-w-3xl mx-auto">
+      <h3 class="text-2xl sm:text-3xl font-heading font-bold text-[#F8F5EE]">Pronta para dar um basta nas dúvidas?</h3>
+      <p class="text-sm text-slate-300 max-w-xl mx-auto">
+        Não adie a sua paz emocional. Envie uma mensagem agora mesmo e consulte a disponibilidade da agenda.
+      </p>
+      <div class="pt-2">
+        <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20verificar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%20para%20consulta." target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-gold hover:bg-gradient-gold-hover text-celestial-950 font-display font-bold text-xs tracking-wider uppercase gold-glow-btn transition-transform hover:scale-105">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Consultar Horários Disponíveis</span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- SEÇÃO 7: PERGUNTAS FREQUENTES (FAQ) -->
+  <section id="faq" class="py-16 sm:py-24 bg-celestial-900/40 border-t border-gold-500/15">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-16 space-y-3">
+        <span class="text-xs font-display font-semibold tracking-widest text-gold-400 uppercase">Tire suas Dúvidas</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[#F8F5EE]">
+          Perguntas Frequentes
+        </h2>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+            <span class="font-heading font-bold text-lg text-[#F8F5EE]">Como funciona o atendimento online no Brasil e em Portugal?</span>
+            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
+            O atendimento é realizado via WhatsApp de forma personalizada e direta com a Amanda Beteli. Você recebe fotos das tiragens das cartas, áudios explicativos detalhados sobre cada posicionamento e tem espaço para fazer perguntas livres. Consulentes de Portugal e de outros países são atendidos respeitando o fuso horário local.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+            <span class="font-heading font-bold text-lg text-[#F8F5EE]">Minhas informações e minha história são sigilosas?</span>
+            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
+            Sim, 100% de sigilo e discrição. Nenhum dado, nome ou detalhe compartilhado durante a consulta é divulgado. Você estará em um espaço seguro, acolhedor e livre de qualquer tipo de julgamento moral.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+            <span class="font-heading font-bold text-lg text-[#F8F5EE]">Como posso realizar o pagamento morando fora do Brasil?</span>
+            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
+            Aceitamos pagamento em Reais (Pix / Cartão) para consulentes no Brasil e em Euros (MB Way, Transferência Bancária Europeia / IBAN ou Cartão Internacional) para consulentes em Portugal e em toda a Europa.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+            <span class="font-heading font-bold text-lg text-[#F8F5EE]">O Tarot pode errar ou mudar com o tempo?</span>
+            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
+            O Tarot mapeia as energias presentes e as tendências mais prováveis com base nas atitudes atuais de cada pessoa. O futuro não é uma prisão rígida: justamente por ter o diagnóstico em mãos, você ganha o poder de mudar suas atitudes para evitar caminhos ruins e potencializar caminhos favoráveis.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="rounded-2xl bg-celestial-850 border border-gold-500/15 overflow-hidden">
+          <button type="button" class="faq-toggle w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none" aria-expanded="false">
+            <span class="font-heading font-bold text-lg text-[#F8F5EE]">Como funcionam os Trabalhos e Rituais Espirituais?</span>
+            <i class="fa-solid fa-chevron-down text-gold-400 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-6 text-sm text-slate-300 leading-relaxed border-t border-gold-500/10 pt-4">
+            Antes de qualquer trabalho, é feita uma leitura prévia no Tarot para verificar a permissão espiritual e a real necessidade energética. Não fazemos promessas mágicas instantâneas: atuamos com firmeza e seriedade em rituais de alinhamento, harmonização e abertura de caminhos com registro e acompanhamento.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER OFICIAL -->
+  <footer class="bg-[#050408] border-t border-gold-500/15 pt-16 pb-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-white/5">
+        
+        <!-- Coluna 1: Marca & Propósito -->
+        <div class="space-y-4 md:col-span-2">
+          <div class="flex items-center gap-3">
+            <img src="logo.png" alt="Ianan Tarot" class="w-12 h-12 rounded-full border border-gold-400/40 object-cover" />
+            <div>
+              <span class="font-display font-bold text-lg text-gradient-gold uppercase">Ianan Tarot</span>
+              <p class="text-[11px] text-slate-400">Amanda Beteli • Especialista em Relacionamentos</p>
+            </div>
+          </div>
+          <p class="text-slate-400 max-w-sm leading-relaxed text-xs">
+            Mais de 30 mil vidas iluminadas com a verdade e o poder terapêutico do Tarot. Consultas online com acolhimento, ética e precisão para Brasil, Portugal e o mundo.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação Rápida -->
+        <div class="space-y-3">
+          <p class="font-display font-bold text-xs text-[#F8F5EE] uppercase tracking-wider">Navegação</p>
+          <ul class="space-y-2">
+            <li><a href="#metodo" class="hover:text-gold-400 transition-colors">O Método</a></li>
+            <li><a href="#relacionamentos" class="hover:text-gold-400 transition-colors">Relacionamentos</a></li>
+            <li><a href="#sobre" class="hover:text-gold-400 transition-colors">Sobre Amanda</a></li>
+            <li><a href="#consultas" class="hover:text-gold-400 transition-colors">Consultas & Rituais</a></li>
+            <li><a href="#faq" class="hover:text-gold-400 transition-colors">Dúvidas Frequentes</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Redes & Contato -->
+        <div class="space-y-3">
+          <p class="font-display font-bold text-xs text-[#F8F5EE] uppercase tracking-wider">Canais Oficiais</p>
+          <div class="space-y-2">
+            <a href="https://wa.me/5548996115084?text=Ol%C3%A1%2C%20Amanda!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-slate-300 hover:text-gold-400 transition-colors">
+              <i class="fa-brands fa-whatsapp text-gold-400 text-sm"></i>
+              <span>(48) 99611-5084</span>
+            </a>
+            <a href="https://www.instagram.com/ianan.tarot/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-slate-300 hover:text-gold-400 transition-colors">
+              <i class="fa-brands fa-instagram text-gold-400 text-sm"></i>
+              <span>@ianan.tarot</span>
+            </a>
+            <p class="text-[11px] text-slate-500 pt-1">Atendimentos Online: Segunda a Sábado</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Direitos Autorais & Sigilo -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500 text-[11px]">
+        <p>&copy; 2026 Ianan Tarot - Amanda Beteli. Todos os direitos reservados.</p>
+        <p class="text-center sm:text-right">Consultas confidenciais de caráter terapêutico e orientativo.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script Externo Sem Scripts Inline (Compatível com CSP script-src 'self') -->
+  <script src="js/app.js"></script>
+</body>
+</html>
