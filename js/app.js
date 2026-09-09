@@ -41,14 +41,14 @@ document.addEventListener("DOMContentLoaded", function () {
   faqToggles.forEach(function (toggle) {
     toggle.addEventListener("click", function () {
       var content = this.nextElementSibling;
-      var icon = this.querySelector(".fa-chevron-down");
+      var icon = this.querySelector(".faq-chevron");
       var isOpen = content && !content.classList.contains("hidden");
 
       // Close all other items
       document.querySelectorAll(".faq-content").forEach(function (item) {
         item.classList.add("hidden");
       });
-      document.querySelectorAll(".faq-toggle .fa-chevron-down").forEach(function (ic) {
+      document.querySelectorAll(".faq-chevron").forEach(function (ic) {
         ic.classList.remove("rotate-180");
       });
 
@@ -61,4 +61,39 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // High-Performance Scroll Reveal Animations via IntersectionObserver
+  // Strict rule: Zero window.onscroll listeners, single execution, unobserve on reveal
+  var revealElements = document.querySelectorAll(".reveal-on-scroll");
+
+  if ("IntersectionObserver" in window) {
+    var observerOptions = {
+      root: null,
+      rootMargin: "0px 0px -40px 0px",
+      threshold: 0.1
+    };
+
+    var revealObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          entry.target.classList.remove("opacity-0", "translate-y-8");
+          entry.target.classList.add("opacity-100", "translate-y-0");
+          // Unobserve immediately after reveal to save CPU and battery
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    revealElements.forEach(function (el) {
+      revealObserver.observe(el);
+    });
+  } else {
+    // Graceful fallback for legacy browsers without IntersectionObserver
+    revealElements.forEach(function (el) {
+      el.classList.add("is-visible");
+      el.classList.remove("opacity-0", "translate-y-8");
+      el.classList.add("opacity-100", "translate-y-0");
+    });
+  }
 });
